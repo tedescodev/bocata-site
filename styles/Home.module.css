@@ -1,0 +1,680 @@
+.homeSection {
+  display: flex;
+}
+
+.homeLeft {
+  width: 50%;
+  height: 100vh;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background: url("../public/assets/home-left.png");
+  cursor: pointer;
+}
+
+.homeRight {
+  width: 50%;
+  height: 100vh;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background: url("../public/assets/home-right.png");
+  cursor: pointer;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  margin-top: -44px;
+  z-index: 2;
+}
+
+.headerContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.headerContent nav {
+  display: flex;
+}
+
+.headerContent .menuBar {
+  display: flex;
+  justify-content: flex-end;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 80%);
+}
+
+.header nav a {
+  align-self: center;
+}
+
+.header nav a h5 {
+  margin: 10px 20px;
+}
+
+.header .iconCenter h5 {
+  margin-top: 5px;
+}
+
+.header .iconCenter img {
+  min-width: 0 !important;
+  min-height: 0 !important;
+  width: 405px !important;
+  height: 42px !important;
+}
+
+.searchIcon {
+  margin-top: 10px;
+}
+
+.iconCenter {
+  text-align: center;
+}
+
+.brands {
+  justify-content: space-around;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  min-height: 49px !important;
+  align-self: baseline;
+  width: 100%;
+}
+
+.brands>div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brands img {
+  height: fit-content;
+  width: fit-content;
+  max-width: 9vw;
+  max-height: 5vh;
+  align-self: baseline;
+}
+
+.filter-categories {
+  cursor: pointer !important;
+}
+
+.more {
+  float: right;
+  color: blue;
+  font-family: "Raleway";
+}
+
+.padding60 {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.paddinLeft60 {
+  padding-left: 10%;
+}
+
+.heightProyects {
+  height: 30vh !important;
+}
+.box {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between !important;
+}
+
+.boxService {
+  width: 25%;
+  min-height: 221px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.boxServiceContent {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.boxServiceContent img {
+  width: 100%;
+  height: auto;
+  max-width: 165px;
+  margin: auto;
+}
+
+.boxService h5 {
+  margin: 0;
+  text-align: center;
+}
+
+.boxProjects {
+  position: relative;
+}
+
+.boxImgAzure {
+  background: url("../public/assets/e37c8ad4e5895bbe0f1cacf28e03bdc2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  margin-left: -60px;
+  margin-right: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contentText {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+  width: 35%;
+  color: #ffffff;
+  padding-left: 15%;
+  padding-right: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.contentText p {
+  color: #ffffff;
+  font-size: 13px;
+  line-height: 28px;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact>div {
+  width: 50%;
+}
+
+/* Pages */
+.headerContentPages {
+  min-height: 21vh;
+  width: 100%;
+  background-position: center !important;
+}
+
+.headerContentPagesHeight {
+  height: 469px;
+  width: 100%;
+  background-position: center !important;
+}
+
+.headerContentPagesContact {
+  min-height: 30vh !important;
+}
+
+.headerContentPages .childenHeader {
+  position: initial;
+}
+
+.headerPages {
+  min-height: 42vw;
+}
+
+.headerPages.short {
+  min-height: 70px;
+}
+
+.childenHeader {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+}
+
+.headerPages.short .headerContentPages {
+  background: none;
+  min-height: 70px;
+}
+
+.headerPages.short .menuBarPages {
+  background: #000;
+  padding: 0;
+  min-height: 70px;
+}
+
+.menuBarPages {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+  padding-bottom: 10%;
+}
+
+.contentPages {
+  background-color: #e5e5e5;
+  position: relative;
+}
+
+.title {
+  border-radius: 55px;
+  padding: 0 60px;
+  position: absolute;
+  top: calc(50% - 10%);
+}
+
+.ImagenPageBox {
+  text-align: center;
+}
+
+.ImagenPageBox img {
+  max-width: 430px;
+  height: auto;
+}
+
+/* Index */
+.linkIndex {
+  height: 100vh;
+  width: 50%;
+}
+
+.linkIndex:hover .maskBlack {
+  background: rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-out;
+}
+
+.linkIndex:hover .maskWhite {
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-out;
+}
+
+.maskBlack {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.maskWhite {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.imgIndex {
+  width: 100%;
+  height: 100%;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.imgIndexLeft {
+  background: url('../public/assets/home-left.png');
+}
+
+.imgIndexRight {
+  background: url('../public/assets/home-right.png');
+}
+
+.logoIndex {
+  height: 35px;
+  width: auto;
+  margin: 10px auto;
+}
+
+.descriptionIndex {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: "Barlow Condensed" !important;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.slide {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover !important;
+  background-position-x: center !important;
+}
+
+.slideSwiperProject {
+  width: 100px;
+  height: 100px;
+}
+
+.slideAthletic {
+  background: url('../public/assets/slider/athletic.png');
+}
+
+.slideAdidas {
+  background: url('../public/assets/slider/adidas.png');
+}
+
+.slideFreemotion {
+  background: url('../public/assets/slider/freemotion.png');
+}
+
+.slideReebok {
+  background: url('../public/assets/slider/reebok.png');
+}
+
+.slideStages {
+  background: url('../public/assets/slider/stages.png');
+}
+
+/* Service */
+.headerContentService {
+  background: url("../public/assets/418a5c5bdba720806238d4edcb717581.png");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentProyects {
+  background: url("../public/assets/portada-proyectos.jpg");
+  background-size: auto 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Sobre nosotros*/
+.headerContentAboutUs {
+  background: url("../public/assets/1c32a85701f5c65d4f4b9cb0b2dc431f.png");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentBrandFreemotion {
+  background: url("../public/assets/portada-freemotion.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentBrandAdidas {
+  background: url("../public/assets/portada-adidas.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentBrandReebok {
+  background: url("../public/assets/portada-reebok.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentBrandAthletic {
+  background: url("../public/assets/portada-athletic.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentBrandStages {
+  background: url("../public/assets/portada-stages.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentPlanos {
+  background: url("../public/assets/planos.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentAsesoramiento {
+  background: url("../public/assets/slider/asesoramiento.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentTesting {
+  background: url("../public/assets/slider/testing.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+.headerContentCompromiso {
+  background: url("../public/assets/slider/compromiso.jpg");
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Catálogo */
+.textCatalogo {
+  height: max-content;
+  align-self: center;
+}
+
+/* Contacto */
+.pageContacto .childenHeader {
+  position: absolute !important;
+  width: 100%;
+}
+
+.pageContacto header {
+  min-height: 324px;
+}
+
+.pageContacto .childenHeader h4 {
+  margin-top: 0;
+}
+
+.pageContacto .childenHeader h1 {
+  margin-bottom: 10px;
+}
+
+.pageContacto .textLeft>div {
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.backgroundBlack .headerContentPages {
+  background: #000000 !important;
+}
+
+.iconCompromiso {
+  background: #000000;
+}
+
+.textLeft {
+  float: right;
+  width: 100%;
+}
+
+.imgRight {
+  background: url('../public/assets/7ae5bb3673a2b09d116b32591c6a2fb8.png');
+  background-size: cover;
+  width: 50%;
+}
+
+.marcas {
+  background-color: #E5E5E5;
+  display: flex;
+}
+
+.imgProducto {
+  position: relative;
+  width: inherit;
+  display: block;
+  height: 60%;
+  margin: auto;
+}
+
+.backgroundContent {
+  background-color: #e5e5e5 !important;
+}
+
+.navSwitch {
+  height: 54px !important;
+}
+
+@media (max-width: 1010px) {
+  /* Marcas */
+  .marcas {
+    display: block;
+  }
+
+  .hiddenFilters {
+    width: max-content;
+    padding: 10px 20px;
+    transition: all 0.2s ease-out;
+  }
+
+  .hiddenFilters h5 {
+    border-width: 0;
+    margin: 0;
+    width: max-content;
+    transition: all 0.2s ease-out;
+  }
+
+  .hiddenFilters .containerFilters {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+
+  .header {
+    margin-top: 0;
+  }
+
+  .headerContent>div {
+    padding-top: 15px;
+    padding-right: 15px;
+  }
+
+  .boxService {
+    width: 50%;
+    min-height: 0;
+  }
+
+  .boxServiceContent {
+    margin: 7px;
+  }
+
+  .boxImgAzure {
+    background-position: top;
+  }
+
+  .contentText {
+    width: 100%;
+    padding: 30px;
+    margin-right: 0;
+    background: #e5e5e5 !important;
+    color: #000000;
+    position: relative;
+    margin-top: 72vw;
+  }
+
+  .contentText p {
+    color: #000000;
+  }
+
+  .contact {
+    display: block !important;
+  }
+
+  .contact div {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 15px;
+    width: 100%;
+  }
+
+  .padding60 {
+    padding: 30px;
+  }
+
+  .boxImgAzure {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .searchIcon {
+    margin-top: 0;
+    vertical-align: middle;
+  }
+
+  /* Paginas */
+
+  .headerContentPlanos {
+    background-position-x: 10% !important;
+  }
+
+  .headerContentAsesoramiento {
+    background-position-x: 80% !important;
+  }
+
+  .headerContentTesting {
+    background-position-x: 100% !important;
+  }
+
+  .headerContentCompromiso {
+    background-position-x: 50% !important;
+  }
+
+  .headerContent .menuBar {
+    justify-content: space-between;
+  }
+
+  /* Index */
+  .linkIndex {
+    height: calc(var(--vh, 1vh) * 50);
+    width: 100%;
+  }
+
+  /* Catálogo */
+  .ImagenPageBox {
+    text-align: right;
+  }
+
+  .ImagenPageBox img {
+    max-width: 230px;
+  }
+  
+  .pageCatalogo .headerPages.short .menuBarPages {
+    min-height: 38px;
+  }
+
+  /* Contacto */
+  .pageContacto .menuBar {
+    padding-bottom: 0 !important;
+    background-color: #000 !important;
+  }
+
+  .pageContacto .childenHeader {
+    bottom: auto;
+    top: 45px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+    padding-bottom: 30px;
+  }
+
+  .pageContacto .backgroundBlack .headerContentPages {
+    background: url('../public/assets/7ae5bb3673a2b09d116b32591c6a2fb8.png') !important;
+    background-size: cover !important;
+    background-position-y: 110px !important;
+    background-repeat: no-repeat !important;
+  }
+  
+  .pageContacto .childenHeader h2 {
+    margin-bottom: 0;
+  }
+
+  .pageContacto .childenHeader h4 {
+    text-transform: none !important;
+  }
+
+  .imgRight {
+    display: none;
+  }
+
+  
+}
