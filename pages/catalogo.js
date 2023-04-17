@@ -96,7 +96,7 @@ export default function Catalogo() {
     if (form.email.isValid) {
       setIsValidForm(true);
       const response = await fetch(
-        `https://super-gym-cms.tejo.uy/v1/api/contact/catalogue`,
+        `https://bocata.tedesco.es/v1/api/contact/catalogue`,
         {
           method: "POST",
           headers: {

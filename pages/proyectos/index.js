@@ -70,7 +70,7 @@ export default function Proyectos({ proyectos }) {
 export async function getServerSideProps() {
   try {
     let proyectos = null;
-    await fetch(`https://super-gym-cms.tejo.uy/v1/api/project`, {
+    await fetch(`https://bocata.tedesco.es/v1/api/project`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

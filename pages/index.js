@@ -1,78 +1,49 @@
 import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
 
-import LogoHome from "../public/assets/b4b29384f1c826d4faaaab1bed74afe2.png";
-import LogoPro from "../public/assets/dc08cdad611e7aabcee8bc6dbbfb87fa.png";
+import { isMobile } from "react-device-detect";
 
-import HomeLayout from "../components/layout/HomeLayout";
+import SuperGymProLayout from "../components/layout/SuperGymProLayout";
+
+import BtnFloat from "../components/ui/btnFloat";
+
+import HeaderHome from "../components/sections/HeaderHome";
+import Representatives from "../components/sections/Representatives";
+import AboutUs from "../components/sections/AboutUs";
+import Projects from "../components/sections/Projects";
+import Advice from "../components/sections/Advice";
 
 import styles from "../styles/Home.module.css";
-import { useEffect } from "react";
+import NavDesktop from "../components/layout/nav/NavDesktop";
+import MenuBar from "../components/ui/MenuBar";
 
-export default function Home() {
-  useEffect(() => {
-    let vh = window.innerHeight * 0.01;
-    // Then we set the value in the --vh custom property to the root of the document
-    document.documentElement.style.setProperty("--vh", `${vh}px`);
-  })
+// import BASE_CONNECTION_STRING from "../config"
+export default function SuperGymPro() {
   return (
-    <div>
-      <Head>
-        <title>SuperGym</title>
-        <meta
-          name="description"
-          content="Nos dedicamos al desarrollo de espacios de Fitness para uso
-          profesional en Gimnasios, Hoteles y Condominios."
-        />
-      </Head>
+    <div className="backgroundContent">
+      {/* ----------index real ------- */}
 
-      <section>
-        <div className="display-flex display-column-mobile">
-          <Link href="/">
-            <a className={styles.linkIndex}>
-              <div className={`${styles.imgIndexLeft} ${styles.imgIndex}`}>
-                <div
-                  className={`${
-                    styles.maskWhite
-                  } ${"full-height full-width flex-center flex-vertical"}`}
-                >
-                  <Image
-                    alt="logo-supergym"
-                    src={LogoHome}
-                    className={styles.logoIndex}
-                    layout="raw"
-                  />
-                  <label className={styles.descriptionIndex}>Hogar</label>
-                </div>
-              </div>
-            </a>
-          </Link>
-          <Link href="/supergympro">
-            <a className={styles.linkIndex}>
-              <div className={`${styles.imgIndexRight} ${styles.imgIndex}`}>
-                <div
-                  className={`${
-                    styles.maskBlack
-                  } ${"full-height full-width flex-center flex-vertical"}`}
-                >
-                  <Image
-                    alt="logo-supergympro"
-                    src={LogoPro}
-                    className={styles.logoIndex}
-                    layout="raw"
-                  />
-                  <label className={`${styles.descriptionIndex} text-white`}>
-                    Gimnasios / hoteles / Condominios
-                  </label>
-                </div>
-              </div>
-            </a>
-          </Link>
-        </div>
-      </section>
+      <Head>
+        <title>Bocata</title>
+        <meta name="description" content="Página oficial del Supermercado Bocata. El lugar preferido por los clientes para ahorrar en el surtido del hogar; “Nuestro compromiso es contigo" />
+      </Head>
+      <NavDesktop />
+      <MenuBar className="only-mobile" nonGradient />
+      <header className={styles.header}>
+        <video autoPlay loop muted width="100%" playsInline>
+          <source
+            src="/assets/025a86105489b877a1414e5b50889d49.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <HeaderHome />
+      </header>
+      <AboutUs />
+      <Representatives />
+      <Projects />
+      <Advice />
+      {isMobile && <BtnFloat />}
     </div>
   );
 }
 
-Home.Layout = HomeLayout;
+SuperGymPro.Layout = SuperGymProLayout;

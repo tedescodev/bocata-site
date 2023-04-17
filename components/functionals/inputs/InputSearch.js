@@ -22,7 +22,7 @@ const InputSearch = ({
   };
 
   const searchResults = async (value) => {
-    await fetch(`https://super-gym-cms.tejo.uy/v1/api/report/search/${value}`, {
+    await fetch(`https://bocata.tedesco.es/v1/api/report/search/${value}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

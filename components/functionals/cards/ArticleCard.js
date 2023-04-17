@@ -29,7 +29,7 @@ const ArticleCard = ({ article, brand }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const getById = async () => {
     await fetch(
-      `https://super-gym-cms.tejo.uy/v1/api/article/${id}`,
+      `https://bocata.tedesco.es/v1/api/article/${id}`,
       {
         method: "GET",
         headers: {

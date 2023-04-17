@@ -183,7 +183,7 @@ header {
 }
 
 .text-primary {
-  color: #38ace3 !important;
+  color: #e80404 !important;
 }
 
 .text-secondary {
@@ -275,7 +275,7 @@ header {
 }
 
 .highlighted {
-  background-color: #38ace3;
+  background-color: #e80404;
   border-radius: 25px;
   padding: 0 7px;
 }

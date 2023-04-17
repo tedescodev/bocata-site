@@ -99,7 +99,7 @@ export async function getServerSideProps(context) {
   try {
     const { id } = context.query;
     let articulo = null;
-    const article = await fetch(`https://super-gym-cms.tejo.uy/v1/api/article/${id}`, {
+    const article = await fetch(`https://bocata.tedesco.es/v1/api/article/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

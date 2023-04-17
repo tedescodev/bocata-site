@@ -75,7 +75,7 @@ export default function Contacto() {
       if (file) body.file = file;
       try {
         const response = await fetch(
-          `https://super-gym-cms.tejo.uy/v1/api/contact`,
+          `https://bocata.tedesco.es/v1/api/contact`,
           {
             method: "POST",
             headers: {

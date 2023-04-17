@@ -64,7 +64,7 @@ export default function Advice() {
       ) {
         setIsValidForm(true);
         const response = await fetch(
-          `https://super-gym-cms.tejo.uy/v1/api/contact/advice`,
+          `https://bocata.tedesco.es/v1/api/contact/advice`,
           {
             method: "POST",
             headers: {

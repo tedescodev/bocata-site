@@ -1,4 +1,4 @@
-const LOCAL_CONNECTION_STRING = 'https://super-gym-cms.tejo.uy/v1/api'
+const LOCAL_CONNECTION_STRING = 'bocata.tedesco.es/v1/api'
 
 const PRODUCTION_CONNECTION_STRING = 'https://api.supergympro.uy/v1/api'
 

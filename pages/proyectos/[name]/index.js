@@ -81,7 +81,7 @@ export async function getServerSideProps(context) {
     const { name } = context.query;
     let proyecto = null;
     await fetch(
-      `https://super-gym-cms.tejo.uy/v1/api/project/getByName/${name}`,
+      `https://bocata.tedesco.es/v1/api/project/getByName/${name}`,
       {
         method: "GET",
         headers: {

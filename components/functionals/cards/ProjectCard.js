@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   const getByName = async () => {
     await fetch(
-      `https://super-gym-cms.tejo.uy/v1/api/project/getByName/${name}`,
+      `https://bocata.tedesco.es/v1/api/project/getByName/${name}`,
       {
         method: "GET",
         headers: {

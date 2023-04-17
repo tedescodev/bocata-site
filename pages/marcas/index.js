@@ -199,7 +199,7 @@ export async function getServerSideProps() {
     let categorias = null;
     let marcas = null;
 
-    await fetch(`https://super-gym-cms.tejo.uy/v1/api/category`, {
+    await fetch(`https://bocata.tedesco.es/v1/api/category`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -223,7 +223,7 @@ export async function getServerSideProps() {
         console.log(error);
       });
 
-    await fetch(`https://super-gym-cms.tejo.uy/v1/api/brand`, {
+    await fetch(`https://bocata.tedesco.es/v1/api/brand`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
